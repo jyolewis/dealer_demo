@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route("english_main");
+  this.route("french_main");
 });
 
 export default Router;
