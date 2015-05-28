@@ -1,6 +1,14 @@
+$blue: #4c66b2;
+$white: white;
+$red: #ff0033;
 
 body{
-  background-color: blue;
+  color: $blue;
+  background-size: cover;
+}
+
+.colorfix{
+  background-color: $blue;
 }
 
 .header-links{
@@ -17,14 +25,18 @@ body{
 }
 
 .row-head{
-  background-color: white;
+  background-color: $white;
   height: 200px;
 }
 .main_title{
-  color:white;
+  background-color: $blue;
+  color:$white;
   text-align: center;
+  h1{
+    color: $red;
+  }
 }
 
 .btn btn-danger, btn-primary, a, hover{
-  color: white;
+  color: $white;
 }

@@ -7,6 +7,6 @@ export default Ember.View.extend({
 
     var screenHeight = Ember.$(window).height();
     Ember.$('.main_title').height(screenHeight);
-    Ember.$('.main_title').css('padding-top', screenHeight / 2);
+    Ember.$('.main_title').css('padding-top', screenHeight / 2.5);
   }
 });
