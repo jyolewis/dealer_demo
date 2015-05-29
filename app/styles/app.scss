@@ -9,6 +9,8 @@ $red: #ff0033;
   @media only screen and (min-width : 320px) {
     .btn-danger{
       width: 100%;
+      float: none;
+
     }
 
   }
@@ -20,11 +22,18 @@ $red: #ff0033;
 
   /* Small Devices, Tablets */
   @media only screen and (min-width : 768px) {
+    .navbar-nav {
+      float: right;
+    }
 
   }
 
   /* Medium Devices, Desktops */
   @media only screen and (min-width : 992px) {
+    .btn-danger {
+      width:180px;
+      height: 100px;
+    }
 
   }
 
