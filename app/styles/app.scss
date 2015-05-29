@@ -3,33 +3,32 @@ $white: white;
 $red: #ff0033;
 
 
-/*==========  Mobile First Method  ==========*/
+//==========  Mobile First Method  ==========
 
-  /* Custom, iPhone Retina */
-  @media only screen and (min-width : 320px) {
-    .btn-danger{
+  // Custom, iPhone Retina
+@media only screen and (min-width : 320px) {
+    .btn-danger {
       width: 100%;
       float: none;
-
     }
 
   }
 
-  /* Extra Small Devices, Phones */
-  @media only screen and (min-width : 480px) {
+  // Extra Small Devices, Phones
+@media only screen and (min-width : 480px) {
 
   }
 
-  /* Small Devices, Tablets */
-  @media only screen and (min-width : 768px) {
+  // Small Devices, Tablets
+@media only screen and (min-width : 768px) {
     .navbar-nav {
       float: right;
     }
 
   }
 
-  /* Medium Devices, Desktops */
-  @media only screen and (min-width : 992px) {
+  // Medium Devices, Desktops
+@media only screen and (min-width : 992px) {
     .btn-danger {
       width:180px;
       height: 100px;
@@ -37,43 +36,41 @@ $red: #ff0033;
 
   }
 
-  /* Large Devices, Wide Screens */
-  @media only screen and (min-width : 1200px) {
+  // Large Devices, Wide Screens
+@media only screen and (min-width : 1200px) {
 
   }
 
-  body{
+body {
     color: $blue;
     background-size: cover;
     width: 100%;
   }
 
-  .content {
+.content {
     background-color: $blue;
   }
 
-  .colorfix{
+.colorfix {
     background-color: $blue;
   }
 
-  .header-links{
+.header-links {
   }
 
-  .btn-head{
-    /*width: 28%;
-    height: 60%;*/
+.btn-head {
     font-size: 100%;
   }
 
-  .pad-head{
+.pad-head {
     padding: 30px 10px 0px 10px;
   }
 
-  .row-head{
+.row-head {
     background-color: $white;
     height: 200px;
   }
-  .main_title{
+.main_title {
     background-color: $blue;
     color:$white;
     text-align: center;
@@ -82,9 +79,6 @@ $red: #ff0033;
     }
   }
 
-  .btn {
-  }
-
-  .btn btn-danger, btn-primary, a, hover{
+.btn btn-danger, btn-primary, a, hover {
     color: $white;
     }
