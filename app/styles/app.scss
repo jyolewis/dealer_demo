@@ -2,41 +2,80 @@ $blue: #4c66b2;
 $white: white;
 $red: #ff0033;
 
-body{
-  color: $blue;
-  background-size: cover;
-}
 
-.colorfix{
-  background-color: $blue;
-}
+/*==========  Mobile First Method  ==========*/
 
-.header-links{
-}
+  /* Custom, iPhone Retina */
+  @media only screen and (min-width : 320px) {
+    .btn-danger{
+      width: 100%;
+    }
 
-.btn-head{
-  width: 180px;
-  height: 100px;
-  font-size: 30px;
-}
-
-.pad-head{
-  padding: 30px 10px 0px 10px;
-}
-
-.row-head{
-  background-color: $white;
-  height: 200px;
-}
-.main_title{
-  background-color: $blue;
-  color:$white;
-  text-align: center;
-  h1{
-    color: $red;
   }
-}
 
-.btn btn-danger, btn-primary, a, hover{
-  color: $white;
-}
+  /* Extra Small Devices, Phones */
+  @media only screen and (min-width : 480px) {
+
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
+
+  }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px) {
+
+  }
+
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width : 1200px) {
+
+  }
+
+  body{
+    color: $blue;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .content {
+    background-color: $blue;
+  }
+
+  .colorfix{
+    background-color: $blue;
+  }
+
+  .header-links{
+  }
+
+  .btn-head{
+    /*width: 28%;
+    height: 60%;*/
+    font-size: 100%;
+  }
+
+  .pad-head{
+    padding: 30px 10px 0px 10px;
+  }
+
+  .row-head{
+    background-color: $white;
+    height: 200px;
+  }
+  .main_title{
+    background-color: $blue;
+    color:$white;
+    text-align: center;
+    h1{
+      color: $red;
+    }
+  }
+
+  .btn {
+  }
+
+  .btn btn-danger, btn-primary, a, hover{
+    color: $white;
+    }
