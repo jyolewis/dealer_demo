@@ -10,7 +10,7 @@ app.import('bower_components/bootstrap/dist/js/bootstrap.js');
 
 sassOptions: {
     includePaths: [
-    //  'bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss'
+     'bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss'
     ]
   }
 // Use `app.import` to add additional libraries to the generated

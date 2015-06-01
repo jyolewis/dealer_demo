@@ -1,6 +1,8 @@
 $blue: #4c66b2;
 $white: white;
 $red: #ff0033;
+$purple: rgb(167, 41, 235);
+
 
 
 //==========  Mobile First Method  ==========
@@ -11,6 +13,23 @@ $red: #ff0033;
     width: 100%;
     float: none;
   }
+
+
+    #logo{
+        width: 90px;
+        height: 54px;
+        position: relative;
+        bottom: 15px;
+       }
+
+    .footer{
+      a:hover{
+        color: purple;
+        cursor: pointer;
+      }
+
+    }
+
 
 }
 
@@ -31,6 +50,11 @@ $red: #ff0033;
 @media only screen and (min-width : 992px) {
   .btn-danger {
     width:180px;
+    height: 100px;
+  }
+
+  #logo{
+    width: 220px;
     height: 100px;
   }
 
@@ -89,7 +113,7 @@ body {
 }
 
 .item{
-    background: #333;    
+    background: #333;
     text-align: center;
     height: 300px !important;
 }
@@ -99,10 +123,22 @@ body {
 .bs-example{
   margin: 20px;
 }
+
+.footer{
+  text-align: center;
+  a{
+    color:$blue;
+  }
+  center{
+    color:$red;
+  }
+}
+
+
 h2{
-    margin: 0;     
+    margin: 0;
     color: #666;
     padding-top: 90px;
     font-size: 52px;
-    font-family: "trebuchet ms", sans-serif;    
+    font-family: "trebuchet ms", sans-serif;
 }
