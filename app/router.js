@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('english_main', { path: '/en' });
   this.route('french_main', { path: '/fr'});
   this.route('engines');
+  this.route('english-aboutus');
 });
 
 export default Router;
