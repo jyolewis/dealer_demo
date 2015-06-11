@@ -6,6 +6,8 @@ var app = new EmberApp();
 
 app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');
 app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+app.import("bower_components/font-awesome/css/font-awesome.css");
+app.import('bower_components/movejs/move.min.js');
 
 
 sassOptions: {
@@ -25,5 +27,6 @@ sassOptions: {
 // modules that you would like to import into your application
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
+
 
 module.exports = app.toTree();

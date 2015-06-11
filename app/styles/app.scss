@@ -2,6 +2,7 @@ $blue: #4c66b2;
 $white: white;
 $red: #ff0033;
 $purple: rgb(167, 41, 235);
+$grey: lightgrey;
 
 
 
@@ -166,14 +167,14 @@ h2 {
 }
 
 .main_title {
-  background-color: white;
-  color: black;
+  // background-color: white;
+  // color: green;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 
   box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 
   h1{
-    color: black;
+    // color: black;
   }
 
   .btn-danger {
@@ -184,6 +185,11 @@ h2 {
   text-align: center;
 
 }
+
+.landing-title{
+  color: $grey;
+}
+
 #main_content {
   padding-right: 18px;
   padding-left: 18px;
@@ -198,6 +204,8 @@ h2 {
   border-color: black;
   height: 100px;
 }
+
+
 #left1{
   float: left;
   width: 100%;
