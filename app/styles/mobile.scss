@@ -1,0 +1,125 @@
+@import "variables";
+@import "main";
+
+
+//==========  Mobile First Method  ==========
+
+// Custom, iPhone Retina
+@media only screen and (min-width : 320px) {
+
+  .btn-danger {
+    width: 100%;
+    float: none;
+  }
+
+
+  .clearfix {
+    padding-top:120px;
+  }
+
+  html {
+    text-align: center;
+    th {
+      text-align: center;
+    }
+  }
+
+  .navbar-default {
+    height: 57px;
+    background-color: black;
+    border-color: black;
+
+  }
+
+
+  #logo {
+    width: 90px;
+    height: 54px;
+    position: relative;
+    bottom: 15px;
+  }
+
+  #footer {
+    text-align: center;
+    background-color: $black;
+    a:hover{
+      color: purple;
+      cursor: pointer;
+      color:$white;
+
+    }
+    center{
+      color:$white;
+    }
+
+  }
+
+
+}
+
+// Extra Small Devices, Phones
+@media only screen and (min-width : 480px) {
+
+  .btn-danger {
+      width: 100%;
+      float: none;
+  }
+  
+  #footer {
+  padding-top: 50px;
+  text-align: center;
+  background-color: $black;
+  a{
+    color:$white;
+  }
+  center{
+    color:$white;
+  }
+}
+
+}
+
+// Small Devices, Tablets
+@media only screen and (min-width : 768px) {
+
+
+}
+
+// Medium Devices, Desktops
+@media only screen and (min-width : 992px) {
+.btn-danger {
+    width:130px;
+    height: 55px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+#logo{
+    width: 200px;
+    height: 95px;
+  }
+#footer {
+  padding-top: 50px;
+  text-align: left;
+  a{
+    color:black;
+  }
+  center{
+    color:black;
+  }
+}
+
+.navbar-default {
+  background-color: black;
+  border-color: black;
+  height: 100px;
+}
+
+}
+
+// Large Devices, Wide Screens
+@media only screen and (min-width : 1200px) {
+
+}

@@ -2,12 +2,13 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dropdown-nav">
+      <button {{action 'addSpacing'}} type="button" id="nav-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dropdown-nav">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+
       <!--<a class="navbar-brand" href="#">This is myLogo</a>-->
        <a class="navbar-brand" href="#">
        <img class="img-responsive" id="logo" src="logo.png" alt="home">
@@ -28,20 +29,19 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div class="row">
- <div class="col-lg-6">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search for...">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Search</button>
-      </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
 
-<div class="container">
-
-
+{{!-- <div class="clearfix"> --}}
+<div id="clearfix" class="container">
+  <div class="row">
+   <div class="col-sm-12">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">Search</button>
+        </span>
+      </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+  </div><!-- /.row -->
  <div class="bs-example">
     <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
       <!-- Carousel indicators -->
@@ -136,3 +136,4 @@
  </div>
 </div>
 </div>
+{{!-- </div> --}}
