@@ -10,31 +10,30 @@
       </button>
       <!--<a class="navbar-brand" href="#">This is myLogo</a>-->
        <a class="navbar-brand" href="#">
-       <img class="img-responsive" id="logo" src="logo.png" alt="home" width="300px" height="90px">
+       <img class="img-responsive" id="logo" src="logo.png" alt="home">
        </a>
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="dropdown-nav">
       <ul class="nav navbar-nav">
-        <li class="active"><button class="btn btn-danger">AutoParts</button><span class="sr-only">(current)</span></li>
-        <li><button class="btn btn-danger">Engines</button></li>
-        <li><button class="btn btn-danger">Tires</button></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Search For... <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <form class="navbar-form navbar" role="search">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search">
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">Go!</button>
-                </span>
-              </div>
-            </form>
-          </ul>
-        </li>
+      <div class="col-xs-5 col-sm-3 pull-right">
+        <form class="navbar-form" role="search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+          </div>
+        </form>
+      </div>
+        <li class="active"><button class="btn btn-danger">{{#link-to "english_main"}}Used Vehicles{{/link-to}}</button><span class="sr-only">(current)</span></li>
+        <li><button class="btn btn-danger">{{#link-to "english_main"}}New Vehicles{{/link-to}}</button></li>
+       <!-- <li><button class="btn btn-danger">Auto Parts</button></li>
+        <li><button class="btn btn-danger">Services</button></li>-->
+        <li><button class="btn btn-danger">{{#link-to "english_contactus"}}Contact Us{{/link-to}}</button></li>
+        <li><button class="btn btn-danger">{{#link-to "english_aboutus"}}About Us{{/link-to}}</button></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
+    </div><!-- /.navbar-collapse -->    
   </div><!-- /.container-fluid -->
 </nav>
 
