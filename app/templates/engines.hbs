@@ -1,0 +1,14 @@
+<h1>This is reading from Ruby On Rails</h1>
+
+<div class="container">
+<table class="table table-striped" border="1">
+  {{#each model as |item|}}
+    <th>Name:</th><th>Price:</th><th>Description:</th>
+    <tr>
+        <td>{{item.name}}</td>
+        <td>{{item.price}}$</td>
+        <td>{{item.description}}</td>
+    </tr>
+    {{/each}}
+</table>
+</div>
