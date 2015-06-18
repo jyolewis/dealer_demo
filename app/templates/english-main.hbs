@@ -2,46 +2,45 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button {{action 'addSpacing'}} type="button" id="nav-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dropdown-nav">
+      <button type="button" {{action 'addSpacing'}} class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dropdown-nav">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-
       <!--<a class="navbar-brand" href="#">This is myLogo</a>-->
        <a class="navbar-brand" href="#">
        <img class="img-responsive" id="logo" src="logo.png" alt="home">
        </a>
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
+
+      <div class="pull-right">
     <div class="collapse navbar-collapse" id="dropdown-nav">
       <ul class="nav navbar-nav">
-        <li class="active"><button class="btn btn-danger">Used Vehicles</button>
-          <span class="sr-only">(current)</span></li>
-        <li><button class="btn btn-danger">New Vehicels</button></li>
+        <li class="active"><button class="btn btn-danger">{{#link-to "english_main"}}Used Vehicles{{/link-to}}</button><span class="sr-only">(current)</span></li>
+        <li><button class="btn btn-danger">{{#link-to "english_main"}}New Vehicles{{/link-to}}</button></li>
        <!-- <li><button class="btn btn-danger">Auto Parts</button></li>
         <li><button class="btn btn-danger">Services</button></li>-->
-        <li><button class="btn btn-danger">Contact Us</button></li>
-        <li><button class="btn btn-danger">{{#link-to 'english-aboutus'}}About Us{{/link-to}}</button></li>
+        <li><button class="btn btn-danger">{{#link-to "english-contactus"}}Contact Us{{/link-to}}</button></li>
+        <li><button class="btn btn-danger">{{#link-to "english-aboutus"}}About Us{{/link-to}}</button></li>
+        <li><form class="navbar-form" id="navbar-spacing" role="search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+          </div>
+        </form></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
+      </div>
+    </div><!-- /.navbar-collapse -->    
   </div><!-- /.container-fluid -->
 </nav>
 
-{{!-- <div class="clearfix"> --}}
-<div id="clearfix" class="container">
-  <div class="row">
-   <div class="col-sm-12">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search for...">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">Search</button>
-        </span>
-      </div><!-- /input-group -->
-    </div><!-- /.col-lg-6 -->
-  </div><!-- /.row -->
+<div class="container" id="clearfix">
+
+
  <div class="bs-example">
     <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
       <!-- Carousel indicators -->
@@ -136,4 +135,3 @@
  </div>
 </div>
 </div>
-{{!-- </div> --}}
