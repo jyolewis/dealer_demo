@@ -69,8 +69,8 @@
   padding-top: 50px;
   text-align: center;
   background-color: $black;
-  a{
-    color:$white;
+  a:hover{
+    color:purple;
   }
   center{
     color:$white;
@@ -103,11 +103,11 @@
 #footer {
   padding-top: 50px;
   text-align: left;
-  a{
-    color:black;
+  a:hover{
+    color:purple;
   }
   center{
-    color:black;
+    color:white;
   }
 }
 

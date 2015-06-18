@@ -2,88 +2,60 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" id="nav-btn" {{action 'addSpacing'}} class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dropdown-nav">
+      <button type="button" {{action 'addSpacing'}} class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dropdown-nav">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
       <!--<a class="navbar-brand" href="#">This is myLogo</a>-->
-       <a class="navbar-brand" href="#">
-       <img class="img-responsive" id="logo" src="logo.png" alt="home">
-       </a>
+      <a class="navbar-brand" href="#">
+        <img class="img-responsive" id="logo" src="logo.png" alt="home">
+      </a>
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="dropdown-nav">
-      <ul class="nav navbar-nav">
-        <li class="active"><button class="btn btn-danger">Used Vehicles</button><span class="sr-only">(current)</span></li>
-        <li><button class="btn btn-danger">New Vehicels</button></li>
-       <!-- <li><button class="btn btn-danger">Auto Parts</button></li>
-        <li><button class="btn btn-danger">Services</button></li>-->
-        <li><button class="btn btn-danger">Contact Us</button></li>
-        <li><button class="btn btn-danger">{{#link-to 'english-aboutus'}}About Us{{/link-to}}</button></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<div id="clearfix" class="container">
-<div class="row">
- <div class="col-lg-6">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search for...">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Search</button>
-      </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
 
-<div id="left1">
-<h3 style="color:black">About Us</h3>
-  <p style="color:black">
-    <img src="wrx.jpg" alt="hydroponics" width="280" height="180" align="left" />
-  The study of crop nutrition began thousands of years ago.
-  Ancient history tells us that various experiments were
-  undertaken by Theophrastus (372-287 B.C.), while several
-  writings of Dioscorides on botany dating from the first century
-  A.D., are still in existence. The earliest published work on
-  growing terrestrial plants without soil was the 1627 book,
-  Sylva Sylvarum by Sir Francis Bacon, printed a year after his
-  death. Water culture became a popular research technique after
-  that. In 1699, John Woodward published his water culture
-  experiments with spearmint. He found that plants in less pure
-  water sources grew better than plants in distilled water. By
-  1842 a list of nine elements believed to be essential to plant
-  growth had been made out, and the discoveries of the German
-  botanists, Julius von Sachs and Wilhelm Knop, in the years
-  1859-65, resulted in a development of the technique of soilless
-  cultivation. Growth of terrestrial plants without soil in
-  mineral nutrient solutions was called solution culture. It
-  quickly became a standard research and teaching technique and
-  is still widely used today. Solution culture is now considered
-  a type of hydroponics where there is no inert medium. In 1929,
-  Professor William Frederick Gericke of the University of
-  California at Berkeley began publicly promoting that solution
-  culture be used for agricultural crop production. He first
-  termed it aquaculture but later found that aquaculture was
-  already applied to culture of aquatic organisms. Gericke
-  created a sensation by growing tomato vines twenty-five feet
-  high in his back yard in mineral nutrient  solutions rather than
-  soil. By analogy with the859-65, resulted in a development of the technique of soilless
-  cultivation. Growth of terrestrial plants without soil in
-  mineral nutrient solutions was called solution culture. It
-  quickly became a standard research and teaching technique and
-  is still widely used today. Solution culture is now considered
-  a type of hydroponics where there is no inert medium. In 1929,
-  Professor William Frederick Gericke of the University of
-  California at Berkeley began publicly promoting that solution
-  culture be used for agricultural crop production. He first
-  termed it aquaculture but later found that aquaculture was
-  already applied to culture of aquatic organisms. Gericke
-  created a sensation by growing tomato vines twenty-five feet
-  high in his back yard in mineral nutrient  solutions rather than
-  soil. By analogy with the
-  </p>
- </div>
- </div>
+    <div class="pull-right">
+      <div class="collapse navbar-collapse" id="dropdown-nav">
+        <ul class="nav navbar-nav">
+          <li class="active"><button class="btn btn-danger">{{#link-to "english_main"}}Used Vehicles{{/link-to}}</button><span class="sr-only">(current)</span></li>
+          <li><button class="btn btn-danger">{{#link-to "english_main"}}New Vehicles{{/link-to}}</button></li>
+<!-- <li><button class="btn btn-danger">Auto Parts</button></li>
+  <li><button class="btn btn-danger">Services</button></li>-->
+  <li><button class="btn btn-danger">{{#link-to "english-contactus"}}Contact Us{{/link-to}}</button></li>
+  <li><button class="btn btn-danger">{{#link-to "english-aboutus"}}About Us{{/link-to}}</button></li>
+  <li><form class="navbar-form" id="navbar-spacing" role="search">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+      </div>
+    </div>
+  </form></li>
+</ul>
+</div>
+</div><!-- /.navbar-collapse -->    
+</div><!-- /.container-fluid -->
+</nav>
+<div class="container" id="clearfix">
+  <div  id="main_content" class="row">
+    <div class="content">
+      <div id="content" class="col-sm-8">
+      <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta nulla enim, ut varius velit mollis id. Duis aliquet porta commodo. Nunc nec ultrices quam. Donec ac mollis elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vestibulum vulputate orci, sed iaculis magna vestibulum id. In a aliquet urna. Quisque consectetur ullamcorper lacus, a suscipit nunc molestie ac. Aliquam aliquam magna sit amet neque condimentum, eu malesuada orci tempor. Morbi ornare lacus eget iaculis vestibulum. Pellentesque ornare arcu eu ligula scelerisque sodales. Vivamus consequat mi nec egestas placerat. Fusce tristique, mauris eu vehicula porta, erat sapien viverra diam, vitae dignissim justo eros non magna. Curabitur ipsum diam, fringilla id ullamcorper eu, aliquam dapibus risus. Duis vehicula consequat tellus, lacinia efficitur leo ornare id.</p>
+
+        <p>Nulla sit amet vulputate felis. In lorem odio, tincidunt pellentesque purus id, porta cursus ligula. Mauris luctus risus elit, et tincidunt dolor euismod in. Proin vel augue in purus scelerisque sagittis. Etiam malesuada sem eget dolor iaculis porttitor. Mauris sed imperdiet magna, quis scelerisque magna. Cras vel cursus sem, at mattis tellus. Nunc quis odio posuere nisi luctus lobortis vel vitae dui. Aliquam tellus elit, elementum at accumsan eu, venenatis id arcu. Suspendisse hendrerit volutpat sapien at molestie. Donec ultricies risus odio, eget auctor nisl mollis in. Pellentesque convallis ipsum neque. Proin nec semper dui, eget condimentum ipsum. Cras blandit nisl lacus, non blandit orci fermentum ut. Curabitur leo tellus, gravida nec ultricies ut, tristique non velit. Etiam at condimentum dui, eu scelerisque tortor.</p>
+
+        <p>In in molestie urna, eget sagittis urna. Mauris in velit orci. Etiam aliquet id libero vitae ultrices. Nunc congue id tellus et aliquam. Etiam sit amet posuere nibh. Sed molestie augue quis faucibus efficitur. Quisque vitae ullamcorper elit. Sed euismod tempor sodales. Etiam et maximus massa.</p>
+      </div>
+    </div>
+    <div class="sidebar col-sm-4">
+      <img src="ppl.jpeg" width="100" height="110">
+      <img src="ppl.jpeg" width="100" height="110"><br>
+      <img src="ppl.jpeg" width="100" height="110">
+      <img src="ppl.jpeg" width="100" height="110"><br>
+      <img src="ppl.jpeg" width="100" height="110">
+      <img src="ppl.jpeg" width="100" height="110">
+    </div>
+  </div>
+</div>
