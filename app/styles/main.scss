@@ -1,22 +1,27 @@
 @import "variables";
 
 body {
-color: $blue;
 background-size: cover;
+color: $blue;
 width: 100%;
 }
 
-#footer {
-padding-top: 50px;
-background-color: black;
-a:hover{
-color:white;
+.bs-example {
+margin: 20px;
 }
-center{
-color:white;
-background-color: black;
+
+.btn btn-danger, btn-primary, a, hover {
+  color: $white;
 }
+
+.btn-head {
+  font-size: 100%;
 }
+
+.carousel {
+margin-top: 20px;
+}
+
 .colorfix {
 background-color: black;
 }
@@ -26,21 +31,22 @@ background-color: $white;
 color: black;
 }
 
-
-.bs-example {
-margin: 20px;
+.facebook_custom {
+  float: none;
+  margin-left: 55px;
+  text-align: center;
 }
 
-.btn btn-danger, btn-primary, a, hover {
-color: $white;
-}
-
-.btn-head {
-font-size: 100%;
-}
-
-.carousel {
-margin-top: 20px;
+#footer {
+  background-color: $black;
+  padding-top: 50px;
+  a:hover {
+    color: $white;
+  }
+  center {
+    background-color: $black;
+    color: $white;
+    }
 }
 
 h2 {
@@ -67,85 +73,93 @@ height: 200px;
 }
 
 .main_title {
-background-color: white;
-color: black;
--webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-
-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-
-h1{
-color: black;
+  background-color: $white;
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  color: $black;
+  text-align: center;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  h1 {
+    color: $purple;
+  }
+  .btn-danger {
+    height: auto;
+    width:auto;
+  }
 }
 
-.btn-danger {
-width:auto;
-height: auto;
-}
-
-text-align: center;
-
-}
 #main_content {
 margin-right: 18px;
 margin-left: 18px;
+padding-bottom: 50px;
 }
+
 // need to re-name
-.col-sm-4 {
-width: 33.33333333%;
-color: black;
+.col-sm-3 custom {
+  margin-top: 18px;
+  width: 30%;
 }
+
+.col-sm-4 custom {
+  color: black;
+  width: 33.33333333%;
+}
+
+.col-sm-8 custom {
+  text-align: left;
+}
+
 .navbar-default {
-background-color: black;
-border-color: black;
-height: 100px;
-}
-.col-sm-8{
-text-align: left;
-}
-.col-sm-3{
-margin-top: 18px;
-width: 30%;
+  background-color: $black;
+  border-color: $black;
+  height: 100px;
 }
 
-.navbar .navbar-form{
-padding: 0 15px;
-border: 0;
--webkit-box-shadow: none;
-box-shadow: none;
+.navbar .navbar-form {
+  border: 0;
+  box-shadow: none;
+  padding: 0 15px;
+  -webkit-box-shadow: none;
 }
 
-#aboutustxt{
-width:900px;
-text-align:justify;
+#aboutustxt {
+  text-align:justify;
+  width:900px;
 }
 
-#navbar-spacing{
-margin-left: 5px;
-margin-right: 5px;
-margin-top: 18px;
-margin-bottom: 18px;
+#navbar-spacing {
+  margin-bottom: 18px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 18px;
 }
 
-#form-spacing{
-  width: 50%;
-  display: block;
-  height: 34px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #555;
+#form-spacing {
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  color: #555;
+  display: block;
+  width: 50%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
   -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
 }
 
-#form-spacing2{
+.custom {
+  border-left: solid;
+  color: $black;
+  padding-bottom: 15px;
+  text-align:left;
+}
+
+#form-spacing2 {
   display: block;
   padding: 6px 12px;
   font-size: 14px;
