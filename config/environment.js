@@ -19,6 +19,11 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['simple-auth'] = {
+    // Need to create a dashboard hbs
+    routeAfterAuthentication: 'engines'
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
