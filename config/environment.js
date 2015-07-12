@@ -21,7 +21,7 @@ module.exports = function(environment) {
 
   ENV['simple-auth'] = {
     // Need to create a dashboard hbs
-    routeAfterAuthentication: 'engines'
+    routeAfterAuthentication: 'dashboard'
   };
 
   if (environment === 'development') {
