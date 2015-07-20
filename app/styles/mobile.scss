@@ -16,15 +16,14 @@
     float: none;
   }
 
-
   .clearfix {
     padding-top: 120px;
   }
 
   .custom {
     padding-bottom: 10px;
-      text-align: center;
-      border: none;
+    text-align: center;
+    border: none;
   }
 
   #footer {
@@ -95,36 +94,37 @@
   }
 
   #form-spacing {
-      width: 100%;
-    }
+    width: 100%;
+  }
 }
 
 // Small Devices, Tablets
 @media only screen and (min-width : 768px) {
-
 
 }
 
 // Medium Devices, Desktops
 @media only screen and (min-width : 992px) {
 
-.btn-danger {
-  height: 55px;
-  margin-bottom: 18px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 18px;
-  width: 130px;
+  .btn-danger {
+    height: 55px;
+    margin-bottom: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 18px;
+    width: 130px;
   }
 
-#logo {
-  height: 95px;
-  width: 200px;
+  .custom {
+    border-left: solid;
+    color: $black;
+    padding-bottom: 15px;
+    text-align:left;
   }
 
-#footer {
-  padding-top: 50px;
-  text-align: left;
+  #footer {
+    padding-top: 50px;
+    text-align: left;
     a:hover {
       color: $purple;
     }
@@ -142,17 +142,15 @@
     width: 50%;
   }
 
-.navbar-default {
-  background-color: black;
-  border-color: black;
-  height: 100px;
+  #logo {
+    height: 95px;
+    width: 200px;
   }
 
-  .custom {
-    border-left: solid;
-    color: $black;
-    padding-bottom: 15px;
-    text-align:left;
+  .navbar-default {
+    background-color: $black;
+    border-color: $black;
+    height: 100px;
   }
 }
 
