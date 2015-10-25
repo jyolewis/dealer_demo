@@ -12,7 +12,13 @@ export default Ember.Controller.extend({
         Ember.$("#clearfix").css("padding-top", 0);
         btn = false;
       }
-    }
+    },
+    getTime: setInterval(function () {
+      
+      var time =  moment().format('MMMM Do YYYY, h:mm:ss a');
+      document.getElementById('currentTime').innerHTML = time;
+
+    },1000)
 
   }
 });

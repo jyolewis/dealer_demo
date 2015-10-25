@@ -5,6 +5,7 @@
     "-Promise",
     "$",
     "move"
+
   ],
   "browser": true,
   "boss": true,
