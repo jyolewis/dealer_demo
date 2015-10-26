@@ -34,7 +34,7 @@
         </form></li>
       </ul>
       </div>
-    </div><!-- /.navbar-collapse -->    
+    </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
@@ -127,10 +127,9 @@
   </table>
   <div class="date">
   <h3>Current Time and Date:</h3><br>
-  <p style="color:red" id="currentTime"></p>
-  <script>
-  document.getElementById("currentTime").innerHTML = Date();
-  </script>
+  <p style="color:red" id="currentTime"><span type="text" {{action 'getTime'}}></span></p>
+
+
 </div>
  </div>
 </div>

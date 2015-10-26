@@ -6,13 +6,19 @@ export default Ember.Controller.extend({
   actions: {
     addSpacing: $("#nav-btn").click = function () {
       if (btn === false){
-      $("#clearfix").css("padding-top", 120);
+      Ember.$("#clearfix").css("padding-top", 120);
         btn = true;
       }else {
-        $("#clearfix").css("padding-top", 0);
+        Ember.$("#clearfix").css("padding-top", 0);
         btn = false;
       }
-    }
+    },
+    getTime: setInterval(function () {
+      
+      var time =  moment().format('MMMM Do YYYY, h:mm:ss a');
+      document.getElementById('currentTime').innerHTML = time;
+
+    },1000)
 
   }
 });
