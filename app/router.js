@@ -34,7 +34,12 @@ Router.map(function() {
   this.route('engines');
   this.route('english-aboutus');
   this.route('english-contactus');
+<<<<<<< HEAD
   this.route('english-new');
+=======
+  this.route('login');
+  this.route('protected');
+>>>>>>> origin
 });
 
 export default Router;
